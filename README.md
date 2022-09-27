@@ -131,5 +131,3 @@ Took 0.2786827087402344 seconds for parsing and printing
 Took 0.6145973205566406 seconds total time
 ```
 Retrieving static page is more than 3x faster considering lower processing needed on server side
-
-If we consider 1 
