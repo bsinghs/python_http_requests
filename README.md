@@ -111,3 +111,25 @@ Traceback (most recent call last):
     raise ConnectionError(e, request=request)
 requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.nonexistentwebsite.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000018CE34911E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
 ```
+
+
+Determine how long it takes, round trip, to make a single HTTP request and get back a response.
+
+Here is the output of https://www.google.com/search for "Tim Berners-Lee" 
+Code p1_time_check_dynamic.py
+```
+Took 1.1756823062896729 seconds for web request
+Took 0.648972749710083 seconds for parsing and printing
+Took 1.8246550559997559 seconds total time
+```
+
+Here is the output of https://www.google.com/ homepage without search
+Code p1_time_check_static.py
+``` 
+Took 0.33591461181640625 seconds for web request
+Took 0.2786827087402344 seconds for parsing and printing
+Took 0.6145973205566406 seconds total time
+```
+Retrieving static page is more than 3x faster considering lower processing needed on server side
+
+If we consider 1 
