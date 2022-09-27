@@ -113,7 +113,7 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.nonexistentwe
 ```
 
 
-Determine how long it takes, round trip, to make a single HTTP request and get back a response.
+## Determine how long it takes, round trip, to make a single HTTP request and get back a response.
 
 Here is the output of https://www.google.com/search for "Tim Berners-Lee" 
 Code p1_time_check_dynamic.py
